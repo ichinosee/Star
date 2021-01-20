@@ -31,6 +31,13 @@ public class StarServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String star = request.getParameter("star");
+		
+		if(star == null || star.length() == 0) {
+			request.setAttribute("message", "星座を入力してください");
+			RequestDispatcher rd = request.getRequestDispatcher("/errInput.jsp");
+			rd.forward(request, response);
+			return;
+		}
 
 
 
