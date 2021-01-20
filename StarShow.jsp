@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1>${Star.star}</h1>
+<h1>${star.star}</h1>
 
 </body>
 </html>
