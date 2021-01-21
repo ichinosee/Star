@@ -7,6 +7,8 @@ import com.sun.jdi.connect.spi.Connection;
 
 import la.bean.StarBean;
 
+
+//作成途中
 public class StarDAO {
 	private Connection con;
 
